@@ -1,3 +1,3 @@
-FROM composer:1
+FROM composer:1.10.19
 
 RUN apk add --no-cache --update alpine-sdk autoconf automake libtool gcc && pecl install xdebug-2.9.8 && docker-php-ext-enable xdebug
